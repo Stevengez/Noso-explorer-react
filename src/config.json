@@ -1,0 +1,5 @@
+{
+  "translatorAPI": "https://www.7software.dev:8080",
+  "marketAPI": "https://www.sevenseas.exchange/api/v1",
+  "maxFetchRetries": 10
+}

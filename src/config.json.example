@@ -1,0 +1,5 @@
+{
+  "translatorAPI": "https://MA_API_SERVER:8090",
+  "marketAPI": "https://MY_MARKET_API/api/v1",
+  "maxFetchRetries": 10
+}

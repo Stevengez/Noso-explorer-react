@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6f754df8-46e0-4acd-8853-4e2d37737b58" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/README.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SECURITY.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/2240554.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/3482729.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/3858198.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/65164-blockchain-cryptocurrency-wallet-ethereum-dogecoin-erc20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/ETHEREUM-ICON_RGB.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/ISO27001.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/Nickel-30px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/Nickel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/bee-coin-30px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/bee-coin-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/casino-100-30.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/casino-100-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/casino-black-30px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/casino-black-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/casino-gold-30px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/casino-gold-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/casino-red-30px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/casino-red-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/eth-icon-62.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/ethereum-badge-seal-grunge-icon-vector-16929779.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/ethereum-stamp-seal-grunge-icon-vector-16930674.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/euro-coin-euroc-logo-2.png.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/generic-token-32px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/generic-token.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/gold-sec-30px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/gold-sec-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/golden-ethereum-coin-symbol-vector-19116997.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/litecoin-30px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/litecoin-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/logo1024.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/metal-coin-30px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/metal-coin-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/monero-30.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/monero-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/nft.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/noso_price.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/one-token-32px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/one-token.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/ribbons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/ruble-30px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/ruble-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/security-token-30px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/security-token-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/shiba-30px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/shiba-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/static/css/main.89aa25c8.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/static/css/main.89aa25c8.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/static/js/main.cc258376.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/static/js/main.cc258376.js.LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/static/js/main.cc258376.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/static/media/globe.d961d1cc33d1d2e45352b957f8fa6a3b.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/static/media/lastblock.5adab090391d9008a31eda942ffc5403.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/static/media/transaction.2f43319e144d19433022a9783bb2a46e.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/th-3885628418" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/token.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/trianges.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/triangle-texture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/white-cryptocurrency-coin-ethereum-eth-icon-vector-21238466.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config.json.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/2240554.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/3482729.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/3858198.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/65164-blockchain-cryptocurrency-wallet-ethereum-dogecoin-erc20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/ETHEREUM-ICON_RGB.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/ISO27001.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/Nickel-30px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/Nickel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/asset-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/bee-coin-30px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/bee-coin-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/casino-100-30.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/casino-100-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/casino-black-30px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/casino-black-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/casino-gold-30px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/casino-gold-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/casino-red-30px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/casino-red-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/eth-icon-62.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/ethereum-badge-seal-grunge-icon-vector-16929779.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/ethereum-stamp-seal-grunge-icon-vector-16930674.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/euro-coin-euroc-logo-2.png.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/generic-token-32px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/generic-token.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/gold-sec-30px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/gold-sec-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/golden-ethereum-coin-symbol-vector-19116997.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/litecoin-30px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/litecoin-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/logo1024.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/metal-coin-30px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/metal-coin-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/monero-30.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/monero-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/nft.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/one-token-32px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/one-token.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/ribbons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/ruble-30px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/ruble-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/security-token-30px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/security-token-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/shiba-30px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/shiba-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/static/css/main.d58d5a60.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/static/css/main.d58d5a60.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/static/js/main.0ec7ade9.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/static/js/main.0ec7ade9.js.LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/static/js/main.0ec7ade9.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/static/media/color.6441e63a57ccc5105bad.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/static/media/lastblock.5adab090391d9008a31eda942ffc5403.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/static/media/logo192.00e9d1b5434e9a841533.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/th-3885628418" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/token.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/trianges.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/triangle-texture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/white-cryptocurrency-coin-ethereum-eth-icon-vector-21238466.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.bk.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/2240554.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/3482729.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/3858198.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/65164-blockchain-cryptocurrency-wallet-ethereum-dogecoin-erc20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/ETHEREUM-ICON_RGB.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/ISO27001.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Nickel-30px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Nickel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bee-coin-30px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bee-coin-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/casino-100-30.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/casino-100-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/casino-black-30px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/casino-black-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/casino-gold-30px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/casino-gold-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/casino-red-30px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/casino-red-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/eth-icon-62.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/ethereum-badge-seal-grunge-icon-vector-16929779.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/ethereum-stamp-seal-grunge-icon-vector-16930674.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/euro-coin-euroc-logo-2.png.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/generic-token-32px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/generic-token.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/gold-sec-30px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/gold-sec-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/golden-ethereum-coin-symbol-vector-19116997.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/litecoin-30px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/litecoin-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/logo1024.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/metal-coin-30px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/metal-coin-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/monero-30.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/monero-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/nft.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/one-token-32px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/one-token.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/ribbons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/ruble-30px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/ruble-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/security-token-30px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/security-token-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/shiba-30px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/shiba-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/th-3885628418" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/token.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/trianges.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/triangle-texture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/white-cryptocurrency-coin-ethereum-eth-icon-vector-21238466.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/class/Templates.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/class/Tools.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/404.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/AddressGVTs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/AddressMoreInfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/AddressOverview.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/AddressTxTable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/BlockInfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/BlockRow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CoinUtil.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Dashboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/GvtOverview.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/HomeNavbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/LatestBlocks.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/LatestTransactions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/LoadingTable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NavLastBlock.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SearchBar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Transaction.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/TxRow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/2240554.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/3482729.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/3858198.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/65164-blockchain-cryptocurrency-wallet-ethereum-dogecoin-erc20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/ETHEREUM-ICON_RGB.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/ISO27001.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/Nickel-30px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/Nickel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/bee-coin-30px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/bee-coin-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/casino-100-30.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/casino-100-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/casino-black-30px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/casino-black-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/casino-gold-30px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/casino-gold-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/casino-red-30px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/casino-red-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/eth-icon-62.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/ethereum-badge-seal-grunge-icon-vector-16929779.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/ethereum-stamp-seal-grunge-icon-vector-16930674.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/euro-coin-euroc-logo-2.png.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/generic-token-32px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/generic-token.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/globe.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/gold-sec-30px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/gold-sec-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/golden-ethereum-coin-symbol-vector-19116997.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/lastblock.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/litecoin-30px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/litecoin-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/logo1024.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/metal-coin-30px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/metal-coin-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/monero-30.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/monero-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/nft.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/noso_price.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/one-token-32px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/one-token.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/ribbons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/ruble-30px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/ruble-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/security-token-30px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/security-token-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/shiba-30px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/shiba-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/token.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/transaction.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/trianges.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/triangle-texture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/white-cryptocurrency-coin-ethereum-eth-icon-vector-21238466.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config.json.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/repository/APIcall.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/Accounts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/Address.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/Apps.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/Block.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/BlockTxs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/Blocks.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/Charts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/Gvts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/Home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/Token.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/Tokens.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/TokensTx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/Topstats.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/Tx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/Txs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/serviceWorker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/setupTests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2OBSGSkH9rD1xbiL6lE82syeH2P" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/stevengez/Documentos/GitHub/Noso-explorer-react&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/stevengez/.local/share/JetBrains/Toolbox/apps/IDEA-U/ch-0/223.8617.56/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Noso-explorer-react" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Noso-explorer-react" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6f754df8-46e0-4acd-8853-4e2d37737b58" name="Changes" comment="" />
+      <created>1681032386140</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1681032386140</updated>
+      <workItem from="1681032388927" duration="627000" />
+      <workItem from="1681069850590" duration="631000" />
+      <workItem from="1681057281048" duration="3975000" />
+      <workItem from="1681134063307" duration="9676000" />
+      <workItem from="1681175778943" duration="5151000" />
+      <workItem from="1681243355831" duration="1441000" />
+      <workItem from="1681251662358" duration="8000" />
+      <workItem from="1681269803880" duration="3257000" />
+      <workItem from="1681320332997" duration="599000" />
+      <workItem from="1681550318584" duration="82449000" />
+      <workItem from="1681852135005" duration="43507000" />
+      <workItem from="1682184024856" duration="20703000" />
+      <workItem from="1682220182564" duration="9129000" />
+      <workItem from="1682271549545" duration="11998000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
