@@ -8,7 +8,6 @@
     "@chainlink/contracts": "^0.4.0",
     "@ethersproject/keccak256": "^5.6.1",
     "@ethersproject/strings": "^5.6.1",
-
     "@syncfusion/ej2-react-charts": "^20.1.61",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.3",

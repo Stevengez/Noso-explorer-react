@@ -4,7 +4,8 @@ const fetchRPC = async (method, params, retries = 1) => {
         let response = await fetch(Config.translatorAPI+'/RPC', {
             method: 'post',
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Authorization': process.env.API_TOKEN
             },
             body: JSON.stringify({
                 jsonrpc: "2.0",
@@ -24,8 +25,16 @@ const fetchRPC = async (method, params, retries = 1) => {
     }
 }
 const fetchAPI = async (URL, method, body, retries = 1) => {
-    let options = method === 'GET' ? { method: method }
-    : { method: method, body: JSON.stringify(body) }
+    let options = method === 'GET' ? { method: method
+    } : { method: method, body: JSON.stringify(body) }
+
+    if(URL === Config.translatorAPI){
+        options.headers = {
+            'Authorization': process.env.API_TOKEN
+        }
+    }
+
+    console.log("Auth: ", process.env.API_TOKEN);
 
     try {
         let response = await fetch(URL, options);

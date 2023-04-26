@@ -1,7 +1,7 @@
 // Modules ----------------------------------------------------------------------------------------- //
 import {BrowserRouter, Routes, Route, HashRouter} from "react-router-dom";
 import {Row, Col } from 'react-bootstrap';
-import {useState, useEffect, useCallback} from 'react';
+import {useState, useEffect, useCallback, useRef} from 'react';
 
 // Export ------------------------------------------------------------------------------------------ //
 import './App.css';
@@ -17,6 +17,7 @@ import Accounts from './routes/Accounts.js'
 import Address from './routes/Address.js'
 import Block from './routes/Block.js'
 import Blocks from './routes/Blocks.js'
+import Faq from './routes/Faq.js'
 import Tx from './routes/Tx.js'
 import Txs from './routes/Txs.js'
 import Topstats from './routes/Topstats.js'
@@ -51,6 +52,9 @@ function App() {
         nosoCirculating: undefined,
         pending: undefined
     });
+
+    const lastBlockRef = useRef();
+    lastBlockRef.current = lastBlock;
 
     const syncServerTime = async () => {
         try {
@@ -95,11 +99,7 @@ function App() {
     const getTxsPage = useCallback((page, pageSize = 20, forceSync = false) => {
         try {
             if (forceSync || txs[page] === undefined || (page === 0 && Array.isArray(txs[page]) && txs[page].length === 6)) {
-                console.log("Getting txs page: ",page, "size: ", pageSize, "force: ", forceSync);
                 let prom = getOrdersPage(page, pageSize).then((res) => {
-                    if(forceSync){
-                        console.log("New forced page res: ", res);
-                    }
                     setTxs((prev) => {
                         let newTxs = [...prev];
                         newTxs[page] = res;
@@ -148,13 +148,13 @@ function App() {
             return blkTxs[block];
         }
     }
-    const pushLastBlock = (block) => {
-        getBlockData(block).then((res) => {
+    const pushLastBlock = async (block) => {
+        try {
+            let res = await getBlockData(block);
             if(res.result[0].number === -1){
-                console.log(res.errorBlock, "Block not ready, postponning...");
-                setTimeout(() => pushLastBlock(res.errorBlock), 30000);
+                await new Promise(r => setTimeout(r, 10000));
+                return await pushLastBlock(block);
             }else{
-                console.log("Block ready");
                 setBlocks((prev) => {
                     let newBlock = res.result[0];
                     let newBlocks = [...prev];
@@ -162,9 +162,9 @@ function App() {
                     return (newBlocks);
                 })
             }
-        }).catch((err) => {
-            console.log("Error retrieving last block: ", err);
-        });
+        }catch (e) {
+            console.log("Error retrieving last block: ", e);
+        }
     }
 
     const getBlocksPage = useCallback((page, pageSize, highest) => {
@@ -222,14 +222,12 @@ function App() {
             setStats(newStats);
             setLastBlock(newStats.lastBlock);
             getBlocksPage(0, 25, newStats.lastBlock);
-            //getBlockTxs(newStats.lastBlock);
             getTxsPage(0, 6);
         } catch (e) {
             console.log("Failed to retrieve mainnet info");
             toast.error("Error loading mainnet stats");
             getBlocksPage(0, 25, stats.lastBlock);
             getTxsPage(0, 6);
-            //getBlockTxs(stats.lastBlock);
         }
     };
 
@@ -242,9 +240,9 @@ function App() {
                 if(prev > 0){
                     return (prev-1);
                 }else{
+                    setTimeout(() => pushLastBlock(lastBlockRef.current), 10000);
                     clearPendings();
                     syncServerTime();
-                    setTimeout(() => pushLastBlock(stats.lastBlock+1), 20000);
                     setTimeout(() => getTxsPage(0, 6, true), 60000);
                     return (600);
                 }
@@ -319,6 +317,10 @@ function App() {
 
                         <Route path="/topstats" element={
                             <Topstats/>
+                        }/>
+
+                        <Route path="/faq" element={
+                            <Faq/>
                         }/>
 
                         <Route path="*" element={

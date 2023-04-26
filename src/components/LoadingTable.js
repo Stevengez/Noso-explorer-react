@@ -1,10 +1,9 @@
 import React from "react";
 import {Spinner} from "react-bootstrap";
-
 const LoadingTable = ({ outOfRange }) => {
 
     return (
-        <div data-test="datatable-table" className="col-sm-12">
+        <div data-test="p-datatable" className="col-sm-12">
             <div data-test="table" className="">
                 <table entries="10" className="table table-striped dataTable">
                     <thead data-test="datatable-head">

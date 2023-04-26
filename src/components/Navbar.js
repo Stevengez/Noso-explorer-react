@@ -3,9 +3,9 @@ import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap'
 import NosoLogo from './images/logo192.png';
 const Navigation = () => {
     return (
-        <Navbar expand="lg"variant="dark" classmap="NavBar" collapseOnSelect={true}>
+        <Navbar expand="lg"variant="dark" classmap="NavBar" collapseOnSelect>
             <Container>
-                <Navbar.Brand as={Link} to={'/'}>
+                <Navbar.Brand href='#/'>
                     <img src={NosoLogo}
                         width="32" height="32"
                         className="d-inline-block align-top" />
@@ -14,11 +14,11 @@ const Navigation = () => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link as={Link} to="/">Home</Nav.Link>
+                        <Nav.Link href="#/">Home</Nav.Link>
                         <NavDropdown title="Blockchain" id="collapsible-nav-blockchain">
-                            <NavDropdown.Item as={Link} to="/accounts">Top Accounts</NavDropdown.Item>
-                            <NavDropdown.Item as={Link} to="/blocks/0">View Blocks</NavDropdown.Item>
-                            <NavDropdown.Item as={Link} to="/txsPending">View Pending Txs</NavDropdown.Item>
+                            <NavDropdown.Item href="#/accounts">Top Accounts</NavDropdown.Item>
+                            <NavDropdown.Item href="#/blocks/0">View Blocks</NavDropdown.Item>
+                            <NavDropdown.Item href="#/txsPending">View Pending Txs</NavDropdown.Item>
                             {/* <NavDropdown.Item as={Link} to="/txs">View Transactions</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/txsPending">View Pending Transactions</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/txsInternal">View Internal Transactions</NavDropdown.Item>
@@ -39,6 +39,8 @@ const Navigation = () => {
                         </NavDropdown>*/}
 
                         <NavDropdown title="Resources" id="collasible-nav-resources">
+                            <NavDropdown.Item href="#/faq">F.A.Q.</NavDropdown.Item>
+                            <NavDropdown.Divider />
                             <NavDropdown.Item href="https://nosocoin.com/" target="_blank">Noso Site</NavDropdown.Item>
                             <NavDropdown.Item href="https://docs.nosocoin.com/" target="_blank">Noso Docs</NavDropdown.Item>
                             <NavDropdown.Item href="https://github.com/Noso-Project/" target="_blank">Noso Project Github</NavDropdown.Item>
