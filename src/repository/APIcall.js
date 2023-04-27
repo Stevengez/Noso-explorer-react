@@ -1,7 +1,8 @@
 import Config from '../config.json';
 import { Base64 } from 'js-base64';
 const prepareBase64 = () => {
-    const current = Date.now()/1000;
+    const current = Date.now() / 1000;
+    console.log("Now: ", current);
     const method = Base64.encode(current+process.env.REACT_APP_API_TOKEN);
     return method;
 }
