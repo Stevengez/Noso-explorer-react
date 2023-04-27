@@ -33,7 +33,6 @@ const fetchAPI = async (URL, authorization, method, body, retries = 1) => {
         options.headers = {
             'Authorization': prepareBase64()
         }
-        console.log("Auth: ", options);
     }
 
     try {
