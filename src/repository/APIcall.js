@@ -30,11 +30,9 @@ const fetchAPI = async (URL, method, body, retries = 1) => {
 
     if(URL === Config.translatorAPI){
         options.headers = {
-            'Authorization': process.env.API_TOKEN
+            'Authorization': process.env.REACT_APP_API_TOKEN
         }
     }
-
-    console.log("Auth: ", process.env.API_TOKEN);
 
     try {
         let response = await fetch(URL, options);
