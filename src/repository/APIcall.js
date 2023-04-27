@@ -4,6 +4,7 @@ const prepareBase64 = () => {
     const current = Math.floor(Date.now() / 1000);
     console.log("Now: ", current);
     const method = Base64.encode(current+process.env.REACT_APP_API_TOKEN);
+    console.log("Enc: ", method);
     return method;
 }
 const fetchRPC = async (method, params, retries = 1) => {
