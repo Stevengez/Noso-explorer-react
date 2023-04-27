@@ -1,12 +1,5 @@
 import Config from '../config.json';
-import { Base64 } from 'js-base64';
-const prepareBase64 = () => {
-    const current = Math.floor(Date.now() / 10000);
-    console.log("Now: ", current);
-    const method = Base64.encode(current+process.env.REACT_APP_API_TOKEN);
-    console.log("Enc: ", method);
-    return method;
-}
+import { prepareBase64 } from '../class/secure';
 const fetchRPC = async (method, params, retries = 1) => {
     try {
         let response = await fetch(Config.translatorAPI+'/RPC', {
