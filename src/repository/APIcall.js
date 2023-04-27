@@ -1,8 +1,8 @@
 import Config from '../config.json';
-
+import { Base64 } from 'js-base64';
 const prepareBase64 = () => {
-    const now = Date.now()/1000;
-    const method = Buffer.from(now+process.env.REACT_APP_API_TOKEN).toString('base64');
+    const current = Date.now()/1000;
+    const method = Base64.encode(current+process.env.REACT_APP_API_TOKEN);
     return method;
 }
 const fetchRPC = async (method, params, retries = 1) => {
@@ -38,6 +38,7 @@ const fetchAPI = async (URL, authorization, method, body, retries = 1) => {
         options.headers = {
             'Authorization': prepareBase64()
         }
+        console.log("Auth: ", options);
     }
 
     try {
