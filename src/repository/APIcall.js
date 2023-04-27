@@ -24,11 +24,11 @@ const fetchRPC = async (method, params, retries = 1) => {
         }
     }
 }
-const fetchAPI = async (URL, method, body, retries = 1) => {
+const fetchAPI = async (URL, authorization, method, body, retries = 1) => {
     let options = method === 'GET' ? { method: method
     } : { method: method, body: JSON.stringify(body) }
 
-    if(URL === Config.translatorAPI){
+    if(authorization){
         options.headers = {
             'Authorization': process.env.REACT_APP_API_TOKEN
         }
@@ -52,17 +52,10 @@ const fetchAPI = async (URL, method, body, retries = 1) => {
     }
 }
 
-export const getServerTime = async () => {
-    return await fetchAPI(
-        Config.translatorAPI + '/Time',
-        'GET',
-        undefined
-    )
-}
-
 export const getMarketUSDPrice = async () => {
     return await fetchAPI(
         Config.marketAPI + '/markets/NOSO-USDT',
+        false,
         'GET',
         undefined
     )
@@ -70,6 +63,7 @@ export const getMarketUSDPrice = async () => {
 export const getMarketBTCPrice = async () => {
     return await fetchAPI(
         Config.marketAPI + '/markets/NOSO-BTC',
+        false,
         'GET',
         undefined
     )
@@ -78,14 +72,24 @@ export const getMarketBTCPrice = async () => {
 export const getOrders = async (page, pageSize) => {
     return await fetchAPI(
         Config.marketAPI + '/markets/NOSO-BTC',
+        false,
         'GET',
         undefined
     )
 }
 
+export const getServerTime = async () => {
+    return await fetchAPI(
+        Config.translatorAPI + '/Time',
+        true,
+        'GET',
+        undefined
+    )
+}
 export const getTopAccounts = async (limit) => {
     return await fetchAPI(
         Config.translatorAPI + '/Address/Top/'+limit,
+        true,
         'GET',
         undefined
     )
@@ -94,6 +98,7 @@ export const getTopAccounts = async (limit) => {
 export const getOrdersPage = async (page, pageSize) => {
     return await fetchAPI(
         Config.translatorAPI + `/Orders?page=${page}&pageSize=${pageSize}`,
+        true,
         'GET',
         undefined
     )
@@ -102,10 +107,41 @@ export const getOrdersPage = async (page, pageSize) => {
 export const getAddressHistoryPage = async (address, page, pageSize) => {
     return await fetchAPI(
         Config.translatorAPI + `/Address/${address}/History?page=${page}&pageSize=${pageSize}`,
+        true,
         'GET',
         undefined
     )
 }
+
+export const getAddressStats = async (addr) => {
+    return await fetchAPI(
+        Config.translatorAPI + '/Address/' + addr,
+        true,
+        'GET',
+        undefined
+    )
+}
+
+export const getGvtStats = async (gvtHash) => {
+    return fetchAPI(
+        Config.translatorAPI + '/GVT/' + gvtHash,
+        true,
+        'GET',
+        undefined
+    )
+}
+
+export const getPendingOrders = async () => {
+    return fetchAPI(
+        Config.translatorAPI + '/Pendings',
+        true,
+        'GET',
+        undefined
+    )
+}
+
+
+/* RPC Requests */
 export const getMainNetInfo = async () => {
     return await fetchRPC('getmainnetinfo',"" )
 }
@@ -139,29 +175,5 @@ export const getOrderInfo = async (orderid) => {
     return await fetchRPC(
         'getorderinfo',
         orderid
-    )
-}
-
-export const getAddressStats = async (addr) => {
-    return await fetchAPI(
-        Config.translatorAPI + '/Address/' + addr,
-        'GET',
-        undefined
-    )
-}
-
-export const getGvtStats = async (gvtHash) => {
-    return fetchAPI(
-        Config.translatorAPI + '/GVT/' + gvtHash,
-        'GET',
-        undefined
-    )
-}
-
-export const getPendingOrders = async () => {
-    return fetchAPI(
-        Config.translatorAPI + '/Pendings',
-        'GET',
-        undefined
     )
 }
