@@ -1,11 +1,17 @@
 import Config from '../config.json';
+
+const prepareBase64 = () => {
+    const now = Date.now()/1000;
+    const method = Buffer.from(now+process.env.REACT_APP_API_TOKEN).toString('base64');
+    return method;
+}
 const fetchRPC = async (method, params, retries = 1) => {
     try {
         let response = await fetch(Config.translatorAPI+'/RPC', {
             method: 'post',
             headers: {
                 'Content-Type': 'application/json',
-                'Authorization': process.env.API_TOKEN
+                'Authorization': prepareBase64()
             },
             body: JSON.stringify({
                 jsonrpc: "2.0",
@@ -30,7 +36,7 @@ const fetchAPI = async (URL, authorization, method, body, retries = 1) => {
 
     if(authorization){
         options.headers = {
-            'Authorization': process.env.REACT_APP_API_TOKEN
+            'Authorization': prepareBase64()
         }
     }
 
