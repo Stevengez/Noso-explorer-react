@@ -1,4 +1,5 @@
 import { Card,ListGroup } from 'react-bootstrap'
+import {Link} from "react-router-dom";
 
 const GvtOverview = ({ gvt }) => {
     // Render ---------------------------------------------------------------------------------------------------------- //
@@ -10,11 +11,7 @@ const GvtOverview = ({ gvt }) => {
             <Card.Body>
                 <ListGroup variant="flush">
                     <ListGroup.Item><b>Number</b>: {gvt.number}</ListGroup.Item>
-                    <ListGroup.Item><b>Owner</b>: <a href={`/address/${gvt.owner}`}
-                        onClick={(e) => {
-                            e.preventDefault();
-                            window.location.href = `/address/${gvt.owner}`;
-                        }}>{gvt.owner}</a></ListGroup.Item>
+                    <ListGroup.Item><b>Owner</b>: <Link to={`/address/${gvt.owner}`}>{gvt.owner}</Link></ListGroup.Item>
                     <ListGroup.Item><b>Hash</b>: {gvt.hash}</ListGroup.Item>
                     {/*
                         <ListGroup.Item><b>Estimated Value</b>: ${address.value}</ListGroup.Item>

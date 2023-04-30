@@ -25,7 +25,7 @@ const LatestTransactions = ({ txs }) => {
                     }
                         <ListGroup.Item>
                             <Link to={`/txs/0`}>
-                                <Button variant="secondary morebutton" size="sm" className="ml-2">More transactions</Button>
+                                <Button variant="secondary morebutton" size="sm">More transactions</Button>
                             </Link>
                     </ListGroup.Item>
                 </ListGroup>

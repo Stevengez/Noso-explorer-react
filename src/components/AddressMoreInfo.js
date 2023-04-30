@@ -11,7 +11,7 @@ const AddressMoreinfo = ({ address }) => {
             </Card.Header>
             <Card.Body>
                 <ListGroup variant="flush">
-                    <ListGroup.Item>What else would oyu like to see here? Let us know on the Noso Discord Server.</ListGroup.Item>
+                    <ListGroup.Item>What else would you like to see here? Let us know on the Noso Discord Server.</ListGroup.Item>
                 </ListGroup>
             </Card.Body>
         </Card>

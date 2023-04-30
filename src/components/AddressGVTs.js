@@ -1,5 +1,5 @@
 import { Card, ListGroup } from 'react-bootstrap'
-import { useNavigate } from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 //import { Link } from "react-router-dom";
 
 const AddressGVTs = ({ gvtList }) => {
@@ -22,15 +22,9 @@ const AddressGVTs = ({ gvtList }) => {
                                 {
                                     gvtList.map((g) => {
                                         return (<span key={g.number}>
-                                            <a
-                                                href={`/gvt/${g.hash}`}
-                                                onClick={(e) => {
-                                                    e.preventDefault();
-                                                    //window.location.href = `/gvt/${g.hash}`;
-                                                    router(`/gvt/${g.hash}`);
-                                                }}>
+                                            <Link to={`/gvt/${g.hash}`}>
                                                 {g.number}
-                                            </a>&nbsp;&nbsp;&nbsp;
+                                            </Link>&nbsp;&nbsp;&nbsp;
                                         </span>);
                                     })
                                 }

@@ -21,7 +21,7 @@ const TxRow = ({tx, idx}) => {
                 <Col xs={5} sm={5} md={5} lg={5}>
                     <Row className='ps-3'>
                         <Row>
-                            <Col><Link className='normalized-txt' to={`/tx/${tx.orderid}`}>TX {tx.orderid.slice(0,8)}..{tx.orderid.slice(-3)}</Link></Col>
+                            <Col><Link className='normalized-txt' to={`/tx/${tx.orderid}`}>{tx.orderid.slice(0,8)}..{tx.orderid.slice(-3)}</Link></Col>
                         </Row>
                         <Row>
                             <Col>

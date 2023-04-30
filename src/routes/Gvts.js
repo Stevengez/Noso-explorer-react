@@ -57,9 +57,6 @@ const Gvts = ({ networkName }) => {
                     <GvtOverview gvt={gvt} />
                 </Col>
                 <Col xs={12} md={12} lg={6}>
-                    {/*<AddressGVTs gvtList={gvt.gvt} />*/}
-                </Col>
-                <Col xs={12} md={12} lg={6}>
                     <AddressMoreInfo address={gvt} />
                 </Col>
             </Row>

@@ -24,7 +24,7 @@ const BlockRow = ({block, idx}) => {
                 <Col xs={4} sm={4} md={4} lg={4}>
                     <Row className='ps-3'>
                         <Row>
-                            <Col><Link to={`/block/${block.number}`}>Block {block.number}</Link></Col>
+                            <Col><Link to={`/block/${block.number}`}>Blk {block.number}</Link></Col>
                         </Row>
                         <Row>
                             <Col><small>{timeAgo.format(block.timeend*1000)}</small></Col>

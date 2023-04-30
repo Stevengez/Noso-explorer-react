@@ -1,7 +1,7 @@
 {
   "name": "nosoexplorer",
   "homepage": "./",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": false,
   "dependencies": {
     "@babel/preset-react": "^7.16.7",
@@ -51,7 +51,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "set \"GENERATE_SOURCEMAP=false\" && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

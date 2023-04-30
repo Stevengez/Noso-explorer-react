@@ -20,16 +20,12 @@ const AddressTxTable = ({ address, addTxs, setAddTxs, setTx }) => {
     const [dataPage, setDataPage] = useState([]);
     const [txPage, setPage] = useState(addTxs.address === address && addTxs.txs.length > 0 ? 0:-1);
     const [loaded, toggleLoaded] = useState(addTxs.address === address && addTxs.txs.length > 0);
-    const [loading, setLoading] = useState(false);
+    const [loading, setLoading] = useState(true);
 
-    useEffect(() => {
-        console.log("Current add: ", addTxs);
-    }, []);
     const pullPageTxs = (page) => {
         try {
             let tempAddTxs = {...addTxs};
             if(tempAddTxs.address !== address){
-                console.log("Renewing txs data for addrr");
                 tempAddTxs.address = address;
                 tempAddTxs.txs = [];
             }
@@ -68,7 +64,6 @@ const AddressTxTable = ({ address, addTxs, setAddTxs, setTx }) => {
 
     useEffect(() => {
         if(txPage !== -1){
-            console.log("Page changed: ", txPage);
             pullPageTxs(txPage);
         }
     }, [txPage])
@@ -78,19 +73,22 @@ const AddressTxTable = ({ address, addTxs, setAddTxs, setTx }) => {
             <Card.Header>
                 <Card.Title>
                     <div className='d-flex justify-content-between align-items-center'>
-                        {
-                            loading && <Spinner size='sm' animation="border" variant="secondary" />
-                        }
-                        <b style={{marginLeft: loading?'-25px':'0px'}}>Address Txs History</b>
+                        <div>
+                            {
+                                loading && <Spinner size='sm' animation="border" variant="secondary" />
+                            }
+                            <b>Txs History</b>
+                        </div>
+
                         {
                             loaded && <div>
                                 <Button
-                                    className={txPage > 0?'btn-warning':'btn-secondary'}
+                                    className={txPage > 0?'btn-warning btn-small':'btn-secondary'}
                                     onClick={() => {
                                         if(txPage > 0) setPage((prev) => (prev-1));
                                     }}
                                 >
-                                    Prev
+                                    &lt;
                                 </Button>
                                 &nbsp;
                                 <span className='normalized-txt'>
@@ -103,7 +101,7 @@ const AddressTxTable = ({ address, addTxs, setAddTxs, setTx }) => {
                                         setPage((prev) => (prev+1));
                                     }}
                                 >
-                                    Next
+                                    &gt;
                                 </Button>
                             </div>
                         }
@@ -118,7 +116,7 @@ const AddressTxTable = ({ address, addTxs, setAddTxs, setTx }) => {
             </Card.Header>
             <Card.Body>
                 {
-                    !loaded && <p>Loading an address history can be resource consuming, so click on load if you really need it.</p>
+                    !loaded && <p>Loading an address txs history can be resource consuming, click on load if you need it.</p>
                 }
                 {
                     loaded && <DataTable
@@ -128,8 +126,8 @@ const AddressTxTable = ({ address, addTxs, setAddTxs, setTx }) => {
                         selectionMode={'single'}
                         size='small'
                         paginator
-                        rows={20}
-                        rowsPerPageOptions={[5,10,15,20,25]}
+                        rows={25}
+                        rowsPerPageOptions={[10,15,25,50,100]}
                     >
                         <Column field='orderid' header='Id' body={(tx) => orderHashTemplate(tx, setTx)}/>
                         <Column field='sender' header='From' body={(tx) => fromTemplate(tx, address)}/>

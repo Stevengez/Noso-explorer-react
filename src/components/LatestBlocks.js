@@ -17,7 +17,7 @@ const LatestBlocks = ({blocks}) => {
                     }
                     <ListGroup.Item>
                         <Link to="/blocks/0">
-                            <Button variant="secondary morebutton" size="sm" className="ml-2">More blocks</Button>
+                            <Button variant="secondary morebutton" size="sm">More blocks</Button>
                         </Link>
                     </ListGroup.Item>
                 </ListGroup>
