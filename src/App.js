@@ -1,5 +1,5 @@
 // Modules ----------------------------------------------------------------------------------------- //
-import {BrowserRouter, Routes, Route, HashRouter} from "react-router-dom";
+import { Routes, Route, HashRouter} from "react-router-dom";
 import {Row, Col } from 'react-bootstrap';
 import {useState, useEffect, useCallback, useRef} from 'react';
 
@@ -338,8 +338,8 @@ function App() {
                         <Row>
                             <Col md={12}>
                                 <p>
-                                    Copyright <a href="https://github.com/Noso-Project" target="_blank"
-                                                 rel="noopener noreferrer">S7evenSoftware</a> 2023. All rights reserved.
+                                    Developed by <a href="https://github.com/Stevengez" target="_blank"
+                                                 rel="noopener noreferrer">JZteven</a>
                                 </p>
                             </Col>
                         </Row>

@@ -1,7 +1,5 @@
 import React, {useEffect, useState} from "react";
 import {Button, Card, Spinner} from 'react-bootstrap'
-import { Link } from "react-router-dom"
-import {balance2Currency} from "./CoinUtil";
 import {Column} from "primereact/column";
 import {DataTable} from "primereact/datatable";
 import {getAddressHistoryPage} from "../repository/APIcall";
@@ -20,7 +18,7 @@ const AddressTxTable = ({ address, addTxs, setAddTxs, setTx }) => {
     const [dataPage, setDataPage] = useState([]);
     const [txPage, setPage] = useState(addTxs.address === address && addTxs.txs.length > 0 ? 0:-1);
     const [loaded, toggleLoaded] = useState(addTxs.address === address && addTxs.txs.length > 0);
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(false);
 
     const pullPageTxs = (page) => {
         try {

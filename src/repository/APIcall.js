@@ -18,7 +18,7 @@ const fetchRPC = async (method, params, retries = 1) => {
         return await response.json();
     }catch (e) {
         if(retries < Config.maxFetchRetries){
-            await new Promise(r => setTimeout(r, 100*retries));
+            await new Promise(r => setTimeout(r, 500*retries));
             return await fetchRPC(method, params, retries+1);
         }else{
             throw e;
@@ -26,6 +26,7 @@ const fetchRPC = async (method, params, retries = 1) => {
     }
 }
 const fetchAPI = async (URL, authorization, method, body, retries = 1) => {
+
     let options = method === 'GET' ? { method: method
     } : { method: method, body: JSON.stringify(body) }
 
@@ -45,8 +46,8 @@ const fetchAPI = async (URL, authorization, method, body, retries = 1) => {
         return parsedRes;
     }catch (e) {
         if(retries < Config.maxFetchRetries){
-            await new Promise(r => setTimeout(r, 100*retries));
-            return await fetchAPI(URL, method, body, retries + 1);
+            await new Promise(r => setTimeout(r, 500*retries));
+            return await fetchAPI(URL, authorization, method, body, retries + 1);
         }else{
             throw e;
         }

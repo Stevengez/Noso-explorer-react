@@ -16,7 +16,7 @@ const Faq = () => {
             <Accordion activeIndex={0}>
                 <AccordionTab header="Why do we need an explorer?">
                     <p className="m-0">
-                        The explorer allows you to easily, well, explore the noso blockchain, blocks, oders and gvt's.
+                        The explorer allows you to easily explore the noso blockchain, blocks, oders and gvt's.
                     </p>
                 </AccordionTab>
                 <AccordionTab header="How do I search for a GVT?">
@@ -24,7 +24,7 @@ const Faq = () => {
                         You can search for a GVT using the pattern 'GVT##' where ## is the 2 digits gvt number, for example, for gvt 0, it would be 'GVT00'. You can also search it using the GVT Hash.
                     </p>
                 </AccordionTab>
-                <AccordionTab header="How is the noso price calculated?">
+                <AccordionTab header="How is the noso usd price calculated?">
                     <p className="m-0">
                         For now the price is retrieved using the <a href='https://www.sevenseas.exchange/market/NOSO-USDT' target='_blank'>Seven Seas Exchange</a> API. In the future, when more exchanges list noso, it will be the average from all of them.
                     </p>
@@ -38,6 +38,11 @@ const Faq = () => {
                 <AccordionTab header="Where is the explorer pulling the information from?">
                     <p className="m-0">
                         The explorer uses an API built on top of noso's mainnet and a mongodb fed with data from block orders. It is not available for public use, but if you are interested in assembling your own API, you can find the source code <a href='https://github.com/Stevengez/NosoTranslator' target='_blank'>here</a>.
+                    </p>
+                </AccordionTab>
+                <AccordionTab header="The explorer is not loading for me but does for others?">
+                    <p className="m-0">
+                        Please make sure you have the date/time set correctly, otherway the explorer will fail to calculate current block and other data.
                     </p>
                 </AccordionTab>
             </Accordion>

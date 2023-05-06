@@ -58,6 +58,22 @@ export const toTemplate = (tx, address) => {
     )
 }
 
+//Top Balance
+export const topTemplate = (address, custom) => {
+    return (
+        <div>
+            <Tooltip target={`.to-${address}`} style={{fontSize: '0.8rem'}}/>
+            <Link
+                to={`/address/${address}`}
+                className={`to-${address} blueLink normalized-txt`}
+                data-pr-tooltip={address}
+                data-pr-position='top'>
+                {custom!==""?custom:address}
+            </Link>
+        </div>
+    )
+}
+
 export const feesTemplate = (tx) => {
     return <div className='normalized-txt txt-align-right'>
         {balance2Currency(tx.fee?tx.fee:tx.fees)}
@@ -67,6 +83,12 @@ export const feesTemplate = (tx) => {
 export const amountTemplate = (tx) => {
     return <div className='normalized-txt txt-align-right'>
         {balance2Currency(tx.amount)}
+    </div>
+}
+
+export const coinTemplate = (value) => {
+    return <div className='normalized-txt txt-align-right pe-3'>
+        {balance2Currency(value)} noso
     </div>
 }
 
