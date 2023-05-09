@@ -1,13 +1,10 @@
-import React, { Component } from "react";
-import { Form, Button } from 'react-bootstrap'
-import { useState, useEffect } from 'react'
+import React from "react";
+import { Button } from 'react-bootstrap'
+import { useState } from 'react'
 import { MdSearch } from 'react-icons/md';
 
-//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-//import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import { isValidAddress } from './CoinUtil';
 import { useNavigate } from 'react-router-dom'
-
 
 const SearchBar = ({ setTx }) => {
     const [term, setTerm] = useState('');
@@ -20,7 +17,7 @@ const SearchBar = ({ setTx }) => {
     function isOrder(order){
         if(order.length > 2){
             //OR3mq96f7ejd2716h4eoffwsr05qmbmboo60msjunpful4v2sccs
-            if(order.substring(0,2) === "OR" && order.length > 45){
+            if((order.substring(0,2) === "OR" || order.substring(0,3) === "1OR")&& order.length > 45){
                 return true;
             }
         }
@@ -32,7 +29,6 @@ const SearchBar = ({ setTx }) => {
     }
 
     function isGvt(gvtHash){
-        console.log("Verifying: ", gvtHash);
         return gvtHash.length > 45 && gvtHash.length < 75;
     }
 
