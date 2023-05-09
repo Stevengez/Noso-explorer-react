@@ -43,7 +43,7 @@ const Transaction = ({ transaction }) => {
                 <ListGroup.Item><b>From</b>: <Link to={`/address/${transaction.sender}`}>{transaction.sender ? transaction.sender : null}</Link> <span onClick={() => copyToClipboard(transaction.sender)}>{copyIcon}</span></ListGroup.Item>
                 <ListGroup.Item><b>To</b>: <Link to={`/address/${transaction.receiver}`}>{transaction.receiver ? transaction.receiver : null}</Link> <span onClick={() => copyToClipboard(transaction.receiver)}>{copyIcon}</span></ListGroup.Item>
                 <ListGroup.Item><b>Amount</b>: {balance2Currency(transaction.amount)} Noso</ListGroup.Item>
-                <ListGroup.Item><b>Fees</b>: {balance2Currency(transaction.fee?transaction.fee:transaction.fees)} Noso</ListGroup.Item>
+                <ListGroup.Item><b>Fees</b>: {balance2Currency(transaction.fee !== undefined ?transaction.fee:transaction.fees)} Noso</ListGroup.Item>
             </ListGroup>
         </Card.Body>
     </Card>

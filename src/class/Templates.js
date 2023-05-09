@@ -76,7 +76,7 @@ export const topTemplate = (address, custom) => {
 
 export const feesTemplate = (tx) => {
     return <div className='normalized-txt txt-align-right'>
-        {balance2Currency(tx.fee?tx.fee:tx.fees)}
+        {balance2Currency(tx.fee!==undefined?tx.fee:tx.fees)}
     </div>
 }
 
